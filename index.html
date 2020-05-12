@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Task Manager</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+    
+</head>
+
+<body onload="renderMemberList(); renderTaskList(); renderAssignmentList();">
+
+    <div id="main-container">
+        <header>
+            <h1>TASK MANAGER</h1>
+            <div id="task-value-check" class="value-check"></div>
+            <div id="member-value-check" class="value-check"></div>
+            <div id="input">
+                <div id="task-form">
+                    <form onsubmit="createTask(event)">
+                        <input class="text-input" name="task" type="text" placeholder="Name of new task">
+                        <button class="button" type="submit">ADD</button>
+                    </form>
+                </div>
+                <div id="tasks-header" class="header">TASKS</div>
+
+                <div id="member-form">
+                    <form onsubmit="createMember(event)">
+                        <input class="text-input" name="teamMember" type="text" placeholder="Name of new team member">
+                        <button class="button" type="submit">ADD</button>
+                    </form>
+                </div>
+                <div id="members-header" class="header">TEAM MEMBERS</div>
+            </div>
+        </header>
+
+        <main>
+            <div id="assign-value-check" class="value-check"></div>
+            <div id="assign-form">
+                
+                <form onsubmit="assignToMember(event)">
+                    <input class="text-input" class="input-txt" id="check-task" type="text" placeholder="Pick task">
+                    <h2 id="plus-symbol">+</h2>
+                    <input class="text-input" class="input-txt" id="check-member" type="text"
+                    placeholder="Pick team member">
+                    <input type="submit" id="assign-button" value="ASSIGN" class="button" class="input-submit">
+                </form>
+            </div>
+            <div id="assignments-header" class="header">TASK ASSIGNMENTS</div>
+
+    <main>
+       
+      
+        <div id="listing">
+            
+            <div id="tasks-rendering" class="rendering"></div>
+            <div id="members-rendering" class="rendering"></div>
+            <div id="assignments-rendering" class="rendering"></div>
+            
+        </div>
+            
+        </main>
+
+
+    </div>
+
+    <script src=index.js></script>
+
+</body>
+
+</html>
