@@ -1,15 +1,11 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-
 #main-container{
     position: relative;
-    background-color: gainsboro;
+    background-color: #E6B0AA;
     margin: 0 auto;
     width: 800px;
-    height: 1000px;
-    border-bottom: 30px solid floralwhite;
+    height: 990px;
+    border-left: 5px solid #E6B0AA;
+    border-right: 5px solid #E6B0AA;
 }
 
 header{
@@ -17,21 +13,21 @@ header{
     position: absolute;
     width: 800px;
     height: 100px;
-    background-color: floralwhite;
+    background-color: #E6B0AA;
     text-align: center;
 }
 
 .text-input{
-    font-size: 15px;
-    border: 1px solid white;
-    height: 17px;
-    width: 250px;
+    font-size: 13px;
+    font-family: monospace;
+    border: 2px solid #6E2C00;
+    height: 20px;
+    width: 220px;
 }
 
 .button{
-    font-size: 14px;
-    border: 1px solid white;
-    color: grey;
+    font-size: 10px;
+    color: black;
     height: 20px;
     width: 50px;
 }
@@ -55,7 +51,7 @@ header{
     z-index: 3;
     top: 110px;
     font-size: 12px;
-    color: red;
+    color: darkslateblue;
 }
 
 #task-value-check{
@@ -75,17 +71,13 @@ header{
     position: absolute;
     z-index: 2;
     top: 170px;
-    background-color: antiquewhite;
-    color: grey;
-    border-bottom: 1px solid white;
+    background-color: #FDEDEC;
+    color: darkslategray;
+    border-bottom: 2px solid #E6B0AA;
     height: 20px;
     width: 370px;
     font-size: 15px;
     padding: 10px;
-}
-
-#tasks-header{
-    left: 0px;
 }
 
 #members-header{
@@ -120,23 +112,17 @@ header{
     left: 450px;
 }
 
-#plus-symbol{
-    position: absolute;
-    color: white;
-    top: -28px;
-    left: 175.5px;
-}
-
 #assignment-object-render{
-    background-color: floralwhite;
-    padding: 20px;
-    padding-bottom: 50px;
+    height: 150px;
+    width: 150px;
+    padding: 2px;
+    background-color: #E6B0AA;
     font-size: 10px;
     text-align: center;
 }
 
 .object-render{
-    background-color: floralwhite;
+    background-color: #E6B0AA;
     padding: 20px;
     font-size: 10px;
     text-align: center;
@@ -160,7 +146,7 @@ header{
 
 .rendering{
     position: absolute;
-    background-color: antiquewhite;
+    background-color: #FDEDEC;
     font-family: sans-serif;
     padding: 20px;
     width: 350px;
