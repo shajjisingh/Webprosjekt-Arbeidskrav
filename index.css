@@ -1,11 +1,12 @@
+
 #main-container{
     position: relative;
-    background-color: #E6B0AA;
+    background-color: #FDEDEC;
     margin: 0 auto;
     width: 800px;
     height: 990px;
-    border-left: 5px solid #E6B0AA;
-    border-right: 5px solid #E6B0AA;
+    border-left: 5px solid #D6EAF8;
+    border-right: 5px solid #D6EAF8;
 }
 
 header{
@@ -13,7 +14,7 @@ header{
     position: absolute;
     width: 800px;
     height: 100px;
-    background-color: #E6B0AA;
+    background-color: #D6EAF8;
     text-align: center;
 }
 
@@ -73,7 +74,7 @@ header{
     top: 170px;
     background-color: #FDEDEC;
     color: darkslategray;
-    border-bottom: 2px solid #E6B0AA;
+    border-bottom: 2px solid #D6EAF8;
     height: 20px;
     width: 370px;
     font-size: 15px;
@@ -116,13 +117,13 @@ header{
     height: 150px;
     width: 150px;
     padding: 2px;
-    background-color: #E6B0AA;
+    background-color: #D6EAF8;
     font-size: 10px;
     text-align: center;
 }
 
 .object-render{
-    background-color: #E6B0AA;
+    background-color: #D6EAF8;
     padding: 20px;
     font-size: 10px;
     text-align: center;
