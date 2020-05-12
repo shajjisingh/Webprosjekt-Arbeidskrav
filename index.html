@@ -5,6 +5,7 @@
     <title>Task Manager</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
     
     
 </head>
@@ -19,16 +20,16 @@
             <div id="input">
                 <div id="task-form">
                     <form onsubmit="createTask(event)">
-                        <input class="text-input" name="task" type="text" placeholder="Name of new task">
-                        <button class="button" type="submit">ADD</button>
+                        <input class="text-input" name="task" type="text" placeholder="Task">
+                        <button class="button" type="submit">Submit</button>
                     </form>
                 </div>
                 <div id="tasks-header" class="header">TASKS</div>
 
                 <div id="member-form">
                     <form onsubmit="createMember(event)">
-                        <input class="text-input" name="teamMember" type="text" placeholder="Name of new team member">
-                        <button class="button" type="submit">ADD</button>
+                        <input class="text-input" name="teamMember" type="text" placeholder="Team member">
+                        <button class="button" type="submit">Submit</button>
                     </form>
                 </div>
                 <div id="members-header" class="header">TEAM MEMBERS</div>
@@ -40,11 +41,10 @@
             <div id="assign-form">
                 
                 <form onsubmit="assignToMember(event)">
-                    <input class="text-input" class="input-txt" id="check-task" type="text" placeholder="Pick task">
-                    <h2 id="plus-symbol">+</h2>
+                    <input class="text-input" class="input-txt" id="check-task" type="text" placeholder="Pick a task">
                     <input class="text-input" class="input-txt" id="check-member" type="text"
-                    placeholder="Pick team member">
-                    <input type="submit" id="assign-button" value="ASSIGN" class="button" class="input-submit">
+                    placeholder="Pick a member">
+                    <input type="submit" id="assign-button" value="Submit" class="button" class="input-submit">
                 </form>
             </div>
             <div id="assignments-header" class="header">TASK ASSIGNMENTS</div>
@@ -64,8 +64,6 @@
 
 
     </div>
-
-    <script src=index.js></script>
 
 </body>
 
